@@ -16,14 +16,14 @@
 		</header>
 			<main class="homepage-main-content">
 				<h1>Hello World</h1>
-				<div class="div1"></div>
-				<div class="div-two"></div>
-				<div class="div-three"></div>
-				<div class="div-four"></div>
-				<div class="div-five"></div>
-				<div class="div-six"></div>
-				<div class="div-seven"></div>
-				<div class="div-eight"></div>
+				<section class="section-one"></section>
+				<section class="section-two"></section>
+				<section class="section-three"></section>
+				<section class="section-four"></section>
+				<section class="section-five"></section>
+				<section class="section-six"></section>
+				<section class="section-seven"></section>
+				<section class="section-eight"></section>
 			</main>
 	</div> <!-- Wrapper div -->
 
