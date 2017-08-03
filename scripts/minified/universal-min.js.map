@@ -1,1 +1,1 @@
-{"version":3,"sources":["..\\js\\universal.js"],"names":["parallax","document","querySelectorAll","window","onscroll","slice","call","forEach","el","elBackgrounPos","pageYOffset","style","backgroundPosition"],"mappings":"CAAA,WAEA,IAAAA,EAAAC,SAAAC,iBAAA,kBAGAC,OAAAC,SAAA,cACAC,MAAAC,KAAAN,GAAAO,QAAA,SAAAC,GAEA,IACAC,EAAA,OANA,GAKAN,OAAAO,YACA,KAEAF,EAAAG,MAAAC,mBAAAH"}
+{"version":3,"sources":[],"names":[],"mappings":""}
