@@ -16,32 +16,52 @@
 // ** Wrapper Tags  **
 // =========================================
 
+html {
+  font-size: 20px;
+}
+
 body {
   @include font-stack;
 }
 
 section {
-  margin: 1rem;
-  background-color: $main-background-colour;
-  height: 30vh;
+  width: 100%;
 }
 
-
-
+p {
+  padding: 0 $paragraph-spacing $paragraph-spacing;
+}
 // =========================================
 // ** Wrapper Classes  **
 // =========================================
 
+.image-section {
+  height: 100vh;
 
+}
+
+.text-section {
+  background-color: $white;
+}
 // =========================================
 // ** Headings  **
 // =========================================
 
-h1 {
+h1,
+h2,
+h3 {
   width: 100%;
   text-align: center;
-  margin: $large-h1-spacing auto;
   padding: 0;
+}
+
+h1 {
+  margin: $large-h1-spacing auto;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  margin: $h2-spacing auto;
 }
 
 
@@ -61,6 +81,30 @@ h1 {
 // =========================================
 // ** Body  **
 // =========================================
+
+//********** Image Backgrounds **********
+
+.image-section {
+  background-position: center;
+  background-size: fill;
+  // background-attachment: fixed;
+}
+
+.section-one {
+  background-image: url('/images/img-1.JPG');
+}
+
+.section-three {
+  background-image: url('/images/img-2.JPG');
+}
+
+.section-five {
+  background-image: url('/images/img-3.JPG');
+}
+
+.section-seven {
+  background-image: url('/images/img-4.JPG');
+}
 
 // =========================================
 // ** Footer  **

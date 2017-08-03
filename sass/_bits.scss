@@ -38,6 +38,7 @@ font-family: sans-serif;
 
 @mixin font-stack {
   font-family: sans-serif;
+  line-height: 2rem;
 }
 
 
@@ -59,6 +60,8 @@ $link-colour: #486a8d;
 
 //Background Colours
 $main-background-colour: #4756e4;
+$other-background-colour: #c32ff7;
+$white: #fff;
 
 
 

@@ -1,0 +1,2 @@
+!function(){var o=document.querySelectorAll(".image-section");window.onscroll=function(){[].slice.call(o).forEach(function(o){var n="50% "+.5*window.pageYOffset+"px";o.style.backgroundPosition=n})}}();
+//# sourceMappingURL=universal-min.js.map
