@@ -36,8 +36,7 @@ p {
 // =========================================
 
 .image-section {
-  height: 100vh;
-
+  height: 70vh;
 }
 
 .text-section {
@@ -86,8 +85,7 @@ h2 {
 
 .image-section {
   background-position: center;
-  background-size: fill;
-  // background-attachment: fixed;
+  background-size: cover;
 }
 
 .section-one {
