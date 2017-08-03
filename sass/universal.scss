@@ -69,6 +69,14 @@ h2 {
 // ** Inline Tags  **
 // =========================================
 
+.parallax-image {
+  display: block;
+  height: 500px;
+  margin-left: 100px;
+  z-index: -1;
+  position: relative;
+}
+
 // =========================================
 // ** Inline Classes  **
 // =========================================
@@ -86,23 +94,24 @@ h2 {
 .image-section {
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.section-one {
-  background-image: url('/images/img-1.JPG');
-}
-
-.section-three {
-  background-image: url('/images/img-2.JPG');
-}
-
-.section-five {
-  background-image: url('/images/img-3.JPG');
-}
-
-.section-seven {
-  background-image: url('/images/img-4.JPG');
-}
+// .section-one {
+//   background-image: url('/images/img-1.JPG');
+// }
+//
+// .section-three {
+//   background-image: url('/images/img-2.JPG');
+// }
+//
+// .section-five {
+//   background-image: url('/images/img-3.JPG');
+// }
+//
+// .section-seven {
+//   background-image: url('/images/img-4.JPG');
+// }
 
 // =========================================
 // ** Footer  **

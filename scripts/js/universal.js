@@ -1,17 +1,11 @@
-(function(){
-
-  var parallax = document.querySelectorAll(".image-section"),
-      speed = 0.5;
-
-  window.onscroll = function(){
-    [].slice.call(parallax).forEach(function(el,i){
-
-      var windowYOffset = window.pageYOffset,
-          elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
-
-      el.style.backgroundPosition = elBackgrounPos;
-
+$(window).scroll(function() {
+        var scrollTop = $(window).scrollTop();
+        var imgPos = scrollTop / 2 + 'px';
+        $('.image-one').css('transform', 'translateY(' + imgPos + ')');
     });
-  };
 
-})();
+    $(window).scroll(function() {
+            var scrollTop = $(window).scrollTop();
+            var imgPos = scrollTop / 4 + 'px';
+            $('.image-two').css('transform', 'translateY(' + imgPos + ')');
+        });
