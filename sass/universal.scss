@@ -16,62 +16,38 @@
 // ** Wrapper Tags  **
 // =========================================
 
-html {
-  font-size: 20px;
-}
-
-body {
-  @include font-stack;
-}
-
-section {
-  width: 100%;
-}
-
-p {
-  padding: 0 $paragraph-spacing $paragraph-spacing;
-}
 // =========================================
 // ** Wrapper Classes  **
 // =========================================
 
-.text-section {
-  background-color: $white;
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5rem auto;
+  height: 100vh;
 }
+
+.container-one {
+  // position: relative;
+  // top: 100px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: $main-background-colour
+}
+
 
 // =========================================
 // ** Headings  **
 // =========================================
 
-h1,
-h2,
-h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-}
-
-h1 {
-  margin: $large-h1-spacing auto;
-  margin-bottom: 5rem;
-}
-
-h2 {
-  margin: $h2-spacing auto;
-}
-
-
-
 // =========================================
 // ** Inline Tags  **
 // =========================================
-
-.parallax-image {
-  display: block;
-  height: 500px;
-  margin-left: 100px;
-
-}
 
 // =========================================
 // ** Inline Classes  **
