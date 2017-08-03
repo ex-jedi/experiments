@@ -35,13 +35,10 @@ p {
 // ** Wrapper Classes  **
 // =========================================
 
-.image-section {
-  height: 70vh;
-}
-
 .text-section {
   background-color: $white;
 }
+
 // =========================================
 // ** Headings  **
 // =========================================
@@ -73,8 +70,7 @@ h2 {
   display: block;
   height: 500px;
   margin-left: 100px;
-  z-index: -1;
-  position: relative;
+
 }
 
 // =========================================
@@ -88,30 +84,6 @@ h2 {
 // =========================================
 // ** Body  **
 // =========================================
-
-//********** Image Backgrounds **********
-
-.image-section {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-// .section-one {
-//   background-image: url('/images/img-1.JPG');
-// }
-//
-// .section-three {
-//   background-image: url('/images/img-2.JPG');
-// }
-//
-// .section-five {
-//   background-image: url('/images/img-3.JPG');
-// }
-//
-// .section-seven {
-//   background-image: url('/images/img-4.JPG');
-// }
 
 // =========================================
 // ** Footer  **

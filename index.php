@@ -15,13 +15,16 @@
 			</nav>
 		</header>
 			<main class="homepage-main-content">
-				<h1>Hello World</h1>
+				<h1 class="rellax" >Hello World</h1>
+				<div class="rellax">
+
+				</div>
 				<section class="section-one image-section">
-					<img class="parallax-image image-one" src="images/img-1.JPG" alt="">
+					<img class="parallax-image image-one rellax" src="images/img-1.JPG" alt="">
 
 				</section>
 				<section class="section-two text-section">
-					<h2>Heading</h2>
+					<h2 class="rellax" data-rellax-speed="-3">Heading</h2>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. At excepturi saepe numquam modi, consectetur, laborum aut magni quis qui quod quam, quos fugiat! Sed voluptatibus eaque nam cumque inventore quod, quis voluptates autem in, reprehenderit! Esse rem minima, cum, ipsum repudiandae molestias laboriosam laudantium recusandae alias voluptate provident, unde quaerat? Amet ipsa eum est quis quasi odit facere ab, dolore dolorem soluta in delectus doloremque accusamus, iure ex eos porro recusandae quas corrupti, ipsum libero tenetur? Dolorum praesentium deleniti odio minima similique quisquam voluptatibus quaerat optio ad molestias, culpa nisi ea autem repellendus quia assumenda eaque mollitia veritatis. Neque harum fuga quasi ullam blanditiis optio sequi expedita dolores tempora rerum a rem illum eaque, placeat reprehenderit ipsa ipsam deserunt non, debitis vel assumenda nisi quis voluptas enim. Fuga ducimus quas eveniet voluptatum, suscipit eaque nostrum inventore praesentium voluptas! Ipsam vitae placeat voluptates adipisci, corporis maiores! Reprehenderit culpa velit dolorem quod.
 					</p>
@@ -61,6 +64,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery/jquery2.1.4"><\/script>')</script>
+<script type="text/javascript" src="scripts/minified/rellax.min.js"></script>
 <script type="text/javascript" src="scripts/minified/universal-min.js"></script>
 </body>
 
