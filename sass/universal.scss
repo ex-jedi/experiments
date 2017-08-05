@@ -36,7 +36,8 @@ p {
 // =========================================
 
 .image-section {
-  height: 100vh;
+  height: 50vh;
+  overflow: hidden;
 }
 
 .text-section {
@@ -83,25 +84,27 @@ h2 {
 
 //********** Image Backgrounds **********
 
-.image-section {
-  background-position: center;
-  background-size: cover;
+.image-div {
+  background-position: center center;
+  background-size: fill;
   background-attachment: fixed;
+  height: 150vh;
+  overflow: visible;
 }
 
-.section-one {
+.div-one {
   background-image: url('/images/img-1.JPG');
 }
 
-.section-three {
-  background-image: url('/images/img-2.JPG');
+.div-two {
+  background-image: url('/images/img-1.JPG');
 }
 
-.section-five {
+.div-three {
   background-image: url('/images/img-3.JPG');
 }
 
-.section-seven {
+.div-four {
   background-image: url('/images/img-4.JPG');
 }
 
