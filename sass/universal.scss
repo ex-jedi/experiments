@@ -1,5 +1,7 @@
+//********** Styles for the whole site **********
+
 // =======================================================================================
-// ** Universal Styles for the whole site  **
+// ** Globals  **
 // =======================================================================================
 
 
@@ -35,14 +37,17 @@ p {
 // ** Wrapper Classes  **
 // =========================================
 
-.image-section {
-  height: 100vh;
-
+.svg-wrapper {
+  width: 10%;
 }
 
-.text-section {
-  background-color: $white;
+.background-div {
+  height: 500px;
+  width: 100%;
+  background-image: url('/images/dog.svg');
+  background-repeat: no-repeat;
 }
+
 // =========================================
 // ** Headings  **
 // =========================================
@@ -56,15 +61,12 @@ h3 {
 }
 
 h1 {
-  margin: $large-h1-spacing auto;
-  margin-bottom: 5rem;
+  margin-bottom: $h1-spacing;
 }
 
 h2 {
   margin: $h2-spacing auto;
 }
-
-
 
 // =========================================
 // ** Inline Tags  **
@@ -81,30 +83,6 @@ h2 {
 // =========================================
 // ** Body  **
 // =========================================
-
-//********** Image Backgrounds **********
-
-.image-section {
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.section-one {
-  background-image: url('/images/img-1.JPG');
-}
-
-.section-three {
-  background-image: url('/images/img-2.JPG');
-}
-
-.section-five {
-  background-image: url('/images/img-3.JPG');
-}
-
-.section-seven {
-  background-image: url('/images/img-4.JPG');
-}
 
 // =========================================
 // ** Footer  **
