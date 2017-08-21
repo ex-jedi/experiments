@@ -50,9 +50,9 @@ p {
 h1,
 h2,
 h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
+  width: 75%;
+  text-align: left;
+  padding: 10px;
 }
 
 h1 {
@@ -61,7 +61,7 @@ h1 {
 }
 
 h2 {
-  margin: $h2-spacing auto;
+  margin: $h2-spacing;
 }
 
 
