@@ -2,6 +2,7 @@
 // ** Universal Styles for the whole site  **
 // =======================================================================================
 
+
 // =========================================
 // ** Imports  **
 // =========================================
@@ -9,17 +10,39 @@
   @import "bits";
   @import "baseline";
 
+
+
 // =========================================
 // ** Wrapper Tags  **
 // =========================================
 
-body {
-  @include font-stack;
+// =========================================
+// ** Wrapper Classes  **
+// =========================================
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5rem auto;
+  height: 100vh;
+}
+
+.container-one {
+  // position: relative;
+  // top: 100px;
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: $main-background-colour
 }
 
 
 // =========================================
-// ** Wrapper Classes  **
+// ** Headings  **
 // =========================================
 
 // =========================================
