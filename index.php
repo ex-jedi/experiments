@@ -15,7 +15,19 @@
 						<img src="images/dog.svg" alt="dog">
 					</div>
 					<div class="background-div">
-
+					</div>
+					<div class="inline-svg-wrapper">
+						<svg width="0" height="0" class="hide">
+							<defs>
+								<g id="icon-twitter">
+									<path d="">
+								</g>
+								<g id="icon-codepen">
+									<path d="">
+									<path d="">
+								</g>
+							</defs>
+						</svg>
 					</div>
 			</main>
 		</div> <!-- Wrapper div -->
