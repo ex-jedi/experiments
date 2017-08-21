@@ -22,7 +22,7 @@ gulp.task('compress', function () {
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '-min' }))
-    .pipe(gulp.dest('scripts/min/'))
+    .pipe(gulp.dest('scripts/minified/'))
 });
 
 gulp.task('browserSync', function() {
@@ -36,5 +36,5 @@ gulp.task('watch',['browserSync', 'sass', 'compress'], function(){
     gulp.watch('scripts/js/*.js', ['compress']);
     gulp.watch('*.php', browserSync.reload);
     gulp.watch('*.html', browserSync.reload);
-    gulp.watch('scripts/min/*.js', browserSync.reload);
+    gulp.watch('scripts/minified/*.js', browserSync.reload);
 })
