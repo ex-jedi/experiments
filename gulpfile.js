@@ -9,7 +9,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('sass', function(){
   return gulp.src('sass/*.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'))
