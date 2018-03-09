@@ -4,15 +4,12 @@
 // ** Globals  **
 // =======================================================================================
 
-
 // =========================================
 // ** Imports  **
 // =========================================
 
-  @import "bits";
-  @import "baseline";
-
-
+@import 'bits';
+@import 'baseline';
 
 // =========================================
 // ** Wrapper Tags  **
@@ -44,7 +41,7 @@ p {
 .background-div {
   height: 500px;
   width: 100%;
-  background-image: url('/images/dog.svg');
+  background-image: url("/images/dog.svg");
   background-repeat: no-repeat;
 }
 
