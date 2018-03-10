@@ -10,40 +10,47 @@
 </head>
 
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+
 	<div class="page-wrapper">
 		<main class="main-content">
 
-			<h1>Vue</h1>
-
 			<div id="root">
-
-
-
-				<p>Vue: {{ wut }} </p>
-				<p>Vue: {{ am }} </p>
-				<p>Vue: {{ dis }} </p>
-
+					<ul>
+						<li v-for="name in names" v-text="name"></li>
+					</ul>
+					<input id="input" type="text">
+					<button id="button">Add Name</button>
 			</div>
 
-			<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
 
 			<script>
-				new Vue({
+			var app =	new Vue({
 
 					el: '#root',
 
 					data: {
 
-						wut: 'Get!',
+						names: ['Joe', 'Mary', 'Jane', 'Jack']
 
-						am: 'The!',
+					},
 
-						dis: 'Chopper!'
+					mounted() {
+
+										document.querySelector('#button').addEventListener('click', () =>{
+
+let name = document.querySelector('#input');
+
+app.names.push(name.value);
+
+name.value = '';
+});
 
 					}
 
-				})
+				});
+
 
 				// document.querySelector('#input').value = data.message;
 			</script>

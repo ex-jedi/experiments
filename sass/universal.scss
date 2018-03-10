@@ -28,7 +28,8 @@ section {
 }
 
 p {
-  padding: 0 $paragraph-spacing $paragraph-spacing;
+  margin: 0 $paragraph-spacing-small $paragraph-spacing-small;
+  padding: 0;
 }
 // =========================================
 // ** Wrapper Classes  **
@@ -58,7 +59,7 @@ h3 {
 }
 
 h1 {
-  margin-bottom: $h1-spacing;
+  margin-bottom: $paragraph-spacing;
 }
 
 h2 {
