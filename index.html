@@ -1,66 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/universal.css">
-	<title></title>
-	<meta name="description" content="">
+	<title>Object-oriented JavaScript example</title>
 </head>
 
 <body>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
-
-	<div class="page-wrapper">
-		<main class="main-content">
-
-			<div id="root">
-					<ul>
-						<li v-for="name in names" v-text="name"></li>
-					</ul>
-					<input id="input" type="text">
-					<button id="button">Add Name</button>
-			</div>
-
-
-
-			<script>
-			var app =	new Vue({
-
-					el: '#root',
-
-					data: {
-
-						names: ['Joe', 'Mary', 'Jane', 'Jack']
-
-					},
-
-					mounted() {
-
-										document.querySelector('#button').addEventListener('click', () =>{
-
-let name = document.querySelector('#input');
-
-app.names.push(name.value);
-
-name.value = '';
-});
-
-					}
-
-				});
-
-
-				// document.querySelector('#input').value = data.message;
-			</script>
-
-
-
-		</main>
-	</div>
-	<!-- Page wrapper -->
 
 </body>
+
+<script>
+	function Person(first, last, age, gender, interests) {
+		this.name = {
+			'first': first,
+			'last': last
+		};
+		this.age = age;
+		this.gender = gender;
+		this.interests = interests;
+		this.bio = function () {
+			alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+		};
+		this.greeting = function () {
+			alert('Hi! I\'m ' + this.name.first + '.');
+		};
+	}
+
+	var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing']);
+var person2 = new Person('Karen', 'Smith', 43, 'female', ['cats', 'dogs']);
+
+var propName = "Hometown";
+var propVal = "Devizes";
+person1[propName] = propVal;
+</script>
 
 </html>
