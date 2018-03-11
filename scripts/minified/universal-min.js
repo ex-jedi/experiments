@@ -1,2 +1,2 @@
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1bml2ZXJzYWwuanMiLCJzb3VyY2VzQ29udGVudCI6W119
+function Person(e,s,t,i,n){this.name={first:e,last:s},this.age=t,this.gender=i,this.interests=n,this.bio=function(){alert(this.name.first+" "+this.name.last+" is "+this.age+" years old. He likes "+this.interests[0]+" and "+this.interests[1]+".")},this.greeting=function(){alert("Hi! I'm "+this.name.first+".")}}var person1=new Person("Bob","Smith",33,"Male",["running","reading"]),person2=new Person("Jan","Taylor",22,"Female",["DIY","Writing"]),person3=Object.create(person1);
+//# sourceMappingURL=maps/universal.js.map
