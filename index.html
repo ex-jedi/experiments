@@ -8,23 +8,26 @@
 
 <body>
 	<div>
-		<label for="jscode">Enter code:</label>
+		<h1>
+			Hi
+		</h1>
+		<!-- <label for="jscode">Enter code:</label>
 		<input type="text" id="jscode">
-		<button>Submit code</button>
+		<button>Submit code</button> -->
 	</div>
 
 	<p></p>
 </body>
 
 <script>
-	var input = document.querySelector('input');
-	var btn = document.querySelector('button');
-	var para = document.querySelector('p');
+	// var input = document.querySelector('input');
+	// var btn = document.querySelector('button');
+	// var para = document.querySelector('p');
 
-	btn.onclick = function () {
-		var code = input.value;
-		para.textContent = eval(code);
-	}
+	// btn.onclick = function () {
+	// 	var code = input.value;
+	// 	para.textContent = eval(code);
+	// }
 
 	function Person(first, last, age, gender, interests) {
 		this.name = {
@@ -138,7 +141,24 @@
 
 	var student1 = new Student('Kate', 'Phoenix', 27, 'female', ['art', 'photography'], 'English');
 
+	function Staff(first, last, age, gender, interests, department) {
+		Person.call(this, first, last, age, gender, interests);
 
+		this.department = department;
+	}
+
+	//Seems to work okay without these?!!
+	// Student.prototype = Object.create(Person.prototype);
+	// Student.prototype.constructor = Student;
+
+	Staff.prototype.greeting = function () {
+		var prefix;
+
+
+		alert('Hello, I\'m ' + this.name.first + ' ' + this.name.last + ', and I work in the ' + this.department + ' department.');
+	};
+
+	var staff1 = new Staff('John', 'Smith', 27, 'female', ['fencing', 'snooker'], 'HR');
 </script>
 
 </html>
