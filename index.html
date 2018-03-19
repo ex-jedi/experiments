@@ -12,17 +12,12 @@
 <body>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
 
-	<div class="page-wrapper">
-		<main class="main-content">
 
-			<div id="root">
-				<ul>
-					<li v-for="name in names" v-text="name"></li>
-				</ul>
-				<p> {{ newName }} </p>
-				<input id="input" type="text" v-model="newName">
-				<button @click="addName">Add Name</button>
-			</div>
+		<div id="root">
+
+			<button :title="title">Hover over me</button>
+
+		</div>
 
 
 
@@ -33,48 +28,15 @@
 
 					data: {
 
-						newName: '',
-
-						names: ['Joe', 'Mary', 'Jane', 'Jack']
-
-					},
-
-					methods: {
-
-						addName() {
-
-							this.names.push(this.newName);
-
-							this.newName = '';
-
-						}
+						title: 'The title is being set in JavaScript!'
 
 					}
-
-					// mounted() {
-
-					// 	document.querySelector('#button').addEventListener('click', () => {
-
-					// 		let name = document.querySelector('#input');
-
-					// 		app.names.push(name.value);
-
-					// 		name.value = '';
-					// 	});
-
-					// }
 
 				});
 
 
 				// document.querySelector('#input').value = data.message;
 			</script>
-
-
-
-		</main>
-	</div>
-	<!-- Page wrapper -->
 
 </body>
 
