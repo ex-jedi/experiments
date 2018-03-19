@@ -19,6 +19,7 @@
 				<ul>
 					<li v-for="name in names" v-text="name"></li>
 				</ul>
+				<p> {{ newName }} </p>
 				<input id="input" type="text" v-model="newName">
 				<button @click="addName">Add Name</button>
 			</div>
