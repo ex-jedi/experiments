@@ -1,43 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/universal.css">
-	<title></title>
-	<meta name="description" content="">
-</head>
+    <title>Our superheroes</title>
 
-<body>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="/css/universal.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+
+    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function() {
+    var superHeroes = request.response;
+    populateHeader(superHeroes);
+    showHeroes(superHeroes);
+  }
+
+  function populateHeader(jsonObj) {
+  var myH1 = document.createElement('h1');
+  myH1.textContent = jsonObj['squadName'];
+  header.appendChild(myH1);
+
+  var myPara = document.createElement('p');
+  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+  header.appendChild(myPara);
+}
 
 
-		<div id="root">
 
-			<button :title="title">Hover over me</button>
-
-		</div>
-
-
-
-			<script>
-				var app = new Vue({
-
-					el: '#root',
-
-					data: {
-
-						title: 'The title is being set in JavaScript!'
-
-					}
-
-				});
-
-
-				// document.querySelector('#input').value = data.message;
-			</script>
-
-</body>
-
+    </script>
+  </body>
 </html>

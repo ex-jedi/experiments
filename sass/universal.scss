@@ -1,87 +1,49 @@
-//********** Styles for the whole site **********
-
-// =======================================================================================
-// ** Globals  **
-// =======================================================================================
-
-// =========================================
-// ** Imports  **
-// =========================================
-
-@import 'bits';
-@import 'baseline';
-
-// =========================================
-// ** Wrapper Tags  **
-// =========================================
+/* || general styles */
 
 html {
-  font-size: 20px;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
 }
 
 body {
-  @include font-stack;
+  width: 800px;
+  margin: 0 auto;
 }
-
-section {
-  width: 100%;
-}
-
-p {
-  margin: 0 $paragraph-spacing-small $paragraph-spacing-small;
-  padding: 0;
-}
-// =========================================
-// ** Wrapper Classes  **
-// =========================================
-
-.svg-wrapper {
-  width: 100%;
-}
-
-.background-div {
-  height: 500px;
-  width: 100%;
-  background-image: url("/images/dog.svg");
-  background-repeat: no-repeat;
-}
-
-// =========================================
-// ** Headings  **
-// =========================================
 
 h1,
-h2,
-h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
+h2 {
+  font-family: "Faster One", cursive;
 }
 
+/* header styles */
+
 h1 {
-  margin-bottom: $paragraph-spacing;
+  font-size: 4rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* section styles */
+
+section article {
+  width: 33%;
+  float: left;
+}
+
+section p {
+  margin: 5px 0;
+}
+
+section ul {
+  margin-top: 0;
 }
 
 h2 {
-  margin: $h2-spacing auto;
+  font-size: 2.5rem;
+  letter-spacing: -5px;
+  margin-bottom: 10px;
 }
-
-// =========================================
-// ** Inline Tags  **
-// =========================================
-
-// =========================================
-// ** Inline Classes  **
-// =========================================
-
-// =========================================
-// ** Header  **
-// =========================================
-
-// =========================================
-// ** Body  **
-// =========================================
-
-// =========================================
-// ** Footer  **
-// =========================================
