@@ -1,12 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/universal.css">
-	<title></title>
-	<meta name="description" content="">
+
+	<title>Vue</title>
+
+	<style>
+
+		.button {
+			font-size: 1.5rem;
+			border: 2px solid #504d4d;
+			border-radius: 5px;
+		}
+
+		.is-loading {
+			background-color: red;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -15,8 +26,7 @@
 
 		<div id="root">
 
-			<button :title="title">Hover over me</button>
-
+			<button class="button" :class="{'is-loading' : isLoading}" @click="isLoading = !isLoading">Click Me</button>
 		</div>
 
 
@@ -28,14 +38,13 @@
 
 					data: {
 
-						title: 'The title is being set in JavaScript!'
+						isLoading: true
 
 					}
 
+
 				});
 
-
-				// document.querySelector('#input').value = data.message;
 			</script>
 
 </body>
