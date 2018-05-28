@@ -8,8 +8,8 @@
 // ** Imports  **
 // =========================================
 
-@import 'bits';
-@import 'baseline';
+@import "bits";
+@import "baseline";
 
 // =========================================
 // ** Wrapper Tags  **
@@ -29,7 +29,7 @@ section {
 
 p {
   margin: 0 $paragraph-spacing-small $paragraph-spacing-small;
-  padding: 0;
+  // padding: 0;
 }
 // =========================================
 // ** Wrapper Classes  **
