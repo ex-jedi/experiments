@@ -21,29 +21,31 @@
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<div id="root">
+
+		<input type="text" id="input" v-model="message">
+
+		<p>The value of the input is {{ message }}.</p>
+
+	</div>
 
 
-		<div id="root">
-
-			<button class="button" :class="{'is-loading' : isLoading}" @click="isLoading = !isLoading">Click Me</button>
-		</div>
-
-
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 			<script>
-				var app = new Vue({
+
+				new Vue({
 
 					el: '#root',
 
 					data: {
 
-						isLoading: true
+						message: "Hello World!"
 
 					}
 
-
-				});
+				})
 
 			</script>
 
