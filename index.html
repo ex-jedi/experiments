@@ -24,13 +24,7 @@
 
 	<div id="root">
 
-		<ul>
-			<li v-for="name in names" v-text="name"></li>
-		</ul>
-
-			<input type="text" v-model="newName">
-			<button v-on:click="addName">Add Name</button>
-
+			<button v-bind:title="title">Hover</button>
 
 	</div>
 
@@ -45,20 +39,7 @@
 
 					data: {
 
-						newName: '',
-
-						names: ['Jon', 'Sam', 'Finn', 'Ben']
-
-					},
-
-					methods : {
-
-						addName: function () {
-
-							this.names.push(this.newName);
-							this.newName = '';
-
-						}
+						title: 'Dynamic title'
 
 					}
 
