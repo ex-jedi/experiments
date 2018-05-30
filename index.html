@@ -13,8 +13,8 @@
 			border-radius: 5px;
 		}
 
-		.colour-red {
-			color: red;
+		.is-loading {
+			background-color: red;
 		}
 
 			.colour-blue {
@@ -28,7 +28,7 @@
 
 	<div id="root">
 
-			<h1 :class="className">Hello World!</h1>
+			<button :class="{ 'is-loading': true }">Click Me</button>
 
 	</div>
 
