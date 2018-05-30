@@ -24,9 +24,11 @@
 
 	<div id="root">
 
-		<input type="text" id="input" v-model="message">
+		<ul>
+			<li v-for="name in names"> {{ name }}  </li>
+		</ul>
 
-		<p>The value of the input is {{ message }}.</p>
+
 
 	</div>
 
@@ -41,7 +43,7 @@
 
 					data: {
 
-						message: "Hello World!"
+						names: ['Jon', 'Sam', 'Finn', 'Ben']
 
 					}
 
