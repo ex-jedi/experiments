@@ -31,7 +31,7 @@
 
 	<div id="root">
 
-			<button :class="{ 'is-loading': isLoading }" @click="toggleClass">Click Me</button>
+			<button :class="{ 'is-loading': toggle }" @click="toggle = !toggle">Click Me</button>
 
 	</div>
 
@@ -46,16 +46,8 @@
 
 					data: {
 
-						isLoading: false
+						toggle: false
 
-					},
-
-					methods: {
-
-						toggleClass: function () {
-
-							this.isLoading = !this.isLoading;
-						}
 					}
 
 				});
