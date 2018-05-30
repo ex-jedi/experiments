@@ -31,7 +31,9 @@
 
 	<div id="root">
 
-			<button :class="{ 'is-loading': toggle }" @click="toggle = !toggle">Click Me</button>
+		 <h1>
+			 {{ reversedMessage }}
+		 </h1>
 
 	</div>
 
@@ -46,8 +48,15 @@
 
 					data: {
 
-						toggle: false
+						message: 'Hello World!'
 
+					},
+
+					computed : {
+
+						reversedMessage: function () {
+							return this.message.split('').reverse().join('');
+						}
 					}
 
 				});
