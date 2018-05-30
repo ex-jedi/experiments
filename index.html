@@ -7,7 +7,7 @@
 
 	<style>
 
-		.button {
+		button {
 			font-size: 1.5rem;
 			border: 2px solid #504d4d;
 			border-radius: 5px;
@@ -15,10 +15,13 @@
 
 		.is-loading {
 			background-color: red;
+			border: 2px solid red;
+			color: #fff;
 		}
 
 			.colour-blue {
 			color: blue;
+
 		}
 
 	</style>
@@ -51,7 +54,7 @@
 
 						toggleClass: function () {
 
-							this.isLoading = true;
+							this.isLoading = !this.isLoading;
 						}
 					}
 
