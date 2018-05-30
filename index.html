@@ -28,7 +28,7 @@
 
 	<div id="root">
 
-			<button :class="{ 'is-loading': true }">Click Me</button>
+			<button :class="{ 'is-loading': isLoading }" @click="toggleClass">Click Me</button>
 
 	</div>
 
@@ -43,8 +43,16 @@
 
 					data: {
 
-						className: 'colour-red'
+						isLoading: false
 
+					},
+
+					methods: {
+
+						toggleClass: function () {
+
+							this.isLoading = true;
+						}
 					}
 
 				});
