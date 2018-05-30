@@ -5,35 +5,17 @@
 
 	<title>Vue</title>
 
-	<style>
-
-		button {
-			font-size: 1.5rem;
-			border: 2px solid #504d4d;
-			border-radius: 5px;
-		}
-
-		.is-loading {
-			background-color: red;
-			border: 2px solid red;
-			color: #fff;
-		}
-
-			.colour-blue {
-			color: blue;
-
-		}
-
-	</style>
 </head>
 
 <body>
 
 	<div id="root">
 
-		 <h1>
-			 {{ reversedMessage }}
-		 </h1>
+		<h1>All Tasks</h1>
+
+		<ul>
+			<li v-for="task in tasks" v-text="task.description"></li>
+		</ul>
 
 	</div>
 
@@ -48,7 +30,14 @@
 
 					data: {
 
-						message: 'Hello World!'
+						tasks: [
+							{description: 'Go to the shop', completed: false},
+							{description: 'Phone client', completed: true},
+							{description: 'Clean car', completed: false},
+							{description: 'Empty bins', completed: true},
+							{description: 'Make Dinner', completed: false},
+							{description: 'Wash dishes', completed: false}
+						]
 
 					},
 
