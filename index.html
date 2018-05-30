@@ -13,8 +13,8 @@
 			border-radius: 5px;
 		}
 
-		.is-loading {
-			background-color: red;
+		.colour-red {
+			color: red;
 		}
 
 	</style>
@@ -24,7 +24,7 @@
 
 	<div id="root">
 
-			<button :title="title">Hover</button>
+			<h1 :class="className">Hello World!</h1>
 
 	</div>
 
@@ -39,7 +39,7 @@
 
 					data: {
 
-						title: 'Dynamic title'
+						className: 'colour-red'
 
 					}
 
