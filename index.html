@@ -17,7 +17,6 @@
 			<li v-for="task in tasks" v-text="task.description"></li>
 		</ul>
 
-	</div>
 
 	<h1>Incomplete Tasks</h1>
 
@@ -51,14 +50,11 @@
 
 					computed : {
 
-						incompleteTasks: function () {
-							// return this.tasks.filter(task => ! task.completed);
-
-							this.tasks.filter(function (task){
-								return !task.completed;
-							})
+						incompleteTasks() {
+							return this.tasks.filter(task => ! task.completed);
+							}
 						}
-					}
+
 
 				});
 
