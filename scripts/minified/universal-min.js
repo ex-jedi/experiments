@@ -1,2 +1,2 @@
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1bml2ZXJzYWwuanMiLCJzb3VyY2VzQ29udGVudCI6W119
+"use strict";new Vue({el:"#root",data:{tasks:[{description:"Go to the shop",completed:!1},{description:"Phone client",completed:!0},{description:"Clean car",completed:!1},{description:"Empty bins",completed:!0},{description:"Make Dinner",completed:!1},{description:"Wash dishes",completed:!1}]},computed:{incompleteTasks:function(){return this.tasks.filter(function(e){return!e.completed})}}});
+//# sourceMappingURL=universal-min.js.map
