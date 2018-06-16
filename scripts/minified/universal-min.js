@@ -1,2 +1,2 @@
-"use strict";new Vue({el:"#root",data:{tasks:[{description:"Go to the shop",completed:!1},{description:"Phone client",completed:!0},{description:"Clean car",completed:!1},{description:"Empty bins",completed:!0},{description:"Make Dinner",completed:!1},{description:"Wash dishes",completed:!1}]},computed:{incompleteTasks:function(){return this.tasks.filter(function(e){return!e.completed})}}});
-//# sourceMappingURL=universal-min.js.map
+
+//# sourceMappingURL=maps/universal.js.map
