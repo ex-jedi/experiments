@@ -56,9 +56,11 @@ gulp.task("compress", function() {
 });
 
 gulp.task('browserSync', function() {
-  browserSync.init({
-      proxy: "experiments"
-  });
+    browserSync.init({
+        server: {
+          baseDir: "./",
+        }
+    });
 });
 
 gulp.watch(jsFiles, gulp.parallel('compress'))
