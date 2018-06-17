@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var sourcemaps = require('gulp-sourcemaps');
@@ -22,16 +22,17 @@ gulp.task('compress', function () {
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '-min' }))
-    .pipe(gulp.dest('scripts/minified/'))
+    .pipe(gulp.dest('scripts/minified/'));
 });
 
 gulp.task('browserSync', function() {
     browserSync.init({
-        proxy: "experiments"
+        proxy: "experiments",
+        port: 3000
     });
 });
 
-gulp.task('watch',['browserSync', 'sass', 'compress'], function(){
+gulp.task('watch',['sass', 'compress', 'browserSync'], function(){
     gulp.watch('sass/*.scss', ['sass']);
     gulp.watch('scripts/js/*.js', ['compress']);
     gulp.watch('*.php', browserSync.reload);

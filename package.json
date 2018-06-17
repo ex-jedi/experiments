@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+ssh://git@bitbucket.org/ex-jedi/experiments.git"
   },
-  "author": "",
+  "author": "Me",
   "license": "ISC",
   "homepage": "https://bitbucket.org/ex-jedi/experiments#readme",
   "devDependencies": {
@@ -23,5 +23,9 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
     "pump": "^1.0.2"
-  }
+  },
+  "dependencies": {},
+  "keywords": [
+    "experiments"
+  ]
 }
