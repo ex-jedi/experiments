@@ -25,28 +25,10 @@ html {
 body {
   @include font-stack;
 }
-
-section {
-  width: 100%;
-}
-
-p {
-  padding: 0 $paragraph-spacing $paragraph-spacing;
-}
 // =========================================
 // ** Wrapper Classes  **
 // =========================================
 
-.svg-wrapper {
-  width: 100%;
-}
-
-.background-div {
-  height: 500px;
-  width: 100%;
-  background-image: url('/images/dog.svg');
-  background-repeat: no-repeat;
-}
 
 // =========================================
 // ** Headings  **
@@ -72,6 +54,10 @@ h2 {
 // ** Inline Tags  **
 // =========================================
 
+img {
+  display: block;
+}
+
 // =========================================
 // ** Inline Classes  **
 // =========================================
@@ -83,6 +69,12 @@ h2 {
 // =========================================
 // ** Body  **
 // =========================================
+
+.shape-image {
+  float: left;
+  width: 300px;
+  shape-outside: url('/images/css-shape.png');
+}
 
 // =========================================
 // ** Footer  **
