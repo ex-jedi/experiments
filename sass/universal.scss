@@ -8,8 +8,8 @@
 // ** Imports  **
 // =========================================
 
-@import "bits";
-@import "baseline";
+@import 'bits';
+@import 'baseline';
 
 // =========================================
 // ** Wrapper Tags  **
@@ -72,7 +72,7 @@ img {
 
 .shape-image {
   width: 300px;
-  shape-outside: url("/images/css-shape.png");
+  shape-outside: url('/images/css-shape.png');
   shape-margin: 25px;
   position: relative;
   margin-top: 200px;
