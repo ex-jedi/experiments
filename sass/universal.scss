@@ -4,15 +4,12 @@
 // ** Globals  **
 // =======================================================================================
 
-
 // =========================================
 // ** Imports  **
 // =========================================
 
-  @import "bits";
-  @import "baseline";
-
-
+@import "bits";
+@import "baseline";
 
 // =========================================
 // ** Wrapper Tags  **
@@ -28,7 +25,6 @@ body {
 // =========================================
 // ** Wrapper Classes  **
 // =========================================
-
 
 // =========================================
 // ** Headings  **
@@ -70,10 +66,24 @@ img {
 // ** Body  **
 // =========================================
 
+.content {
+  position: relative;
+}
+
 .shape-image {
-  float: left;
   width: 300px;
-  shape-outside: url('/images/css-shape.png');
+  shape-outside: url("/images/css-shape.png");
+  shape-margin: 25px;
+  position: relative;
+  margin-top: 200px;
+}
+
+.left-image {
+  float: left;
+}
+
+.right-image {
+  float: right;
 }
 
 // =========================================
