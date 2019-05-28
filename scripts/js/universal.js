@@ -24,26 +24,37 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-  // special bonus for those using jQuery
-  if (typeof jQuery === 'function' && el instanceof jQuery) {
-    el = el[0];
-  }
-
-  let offset = 50;
-  var rect = el.getBoundingClientRect();
+  var bounding = el.getBoundingClientRect();
   return (
-    (rect.top <= 0 && rect.bottom >= 0) ||
-    (rect.bottom >=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.top <=
-        (window.innerHeight - offset ||
-          document.documentElement.clientHeight - offset)) ||
-    (rect.top >= 0 &&
-      rect.bottom <=
-        (window.innerHeight - offset ||
-          document.documentElement.clientHeight - offset))
+    bounding.top >= 50 &&
+    bounding.left >= 0 &&
+    bounding.bottom <=
+      (window.innerHeight - 50 || document.documentElement.clientHeight - 50) &&
+    bounding.right <=
+      (window.innerWidth || document.documentElement.clientWidth)
   );
 }
+// function isElementInViewport(el) {
+//   // special bonus for those using jQuery
+//   if (typeof jQuery === 'function' && el instanceof jQuery) {
+//     el = el[0];
+//   }
+
+//   let offset = 50;
+//   var rect = el.getBoundingClientRect();
+//   return (
+//     (rect.top <= 0 && rect.bottom >= 0) ||
+//     (rect.bottom >=
+//       (window.innerHeight || document.documentElement.clientHeight) &&
+//       rect.top <=
+//         (window.innerHeight - offset ||
+//           document.documentElement.clientHeight - offset)) ||
+//     (rect.top >= 0 &&
+//       rect.bottom <=
+//         (window.innerHeight - offset ||
+//           document.documentElement.clientHeight - offset))
+//   );
+// }
 
 // Get the H1 heading
 var h1 = document.querySelector('h1');
