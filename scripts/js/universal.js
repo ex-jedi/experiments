@@ -1,11 +1,12 @@
 // Detect request animation frame
-var scroll =
+let scroll =
   window.requestAnimationFrame ||
   // IE Fallback
   function(callback) {
     window.setTimeout(callback, 1000 / 60);
   };
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
+
+let elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
   elementsToShow.forEach(function(element) {
@@ -24,21 +25,18 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-  let offset = 50;
   var bounding = el.getBoundingClientRect();
+
+  //Set how far the element 'peeks' into the viewport
+  let offsetTop = 50; // Offset in pixels or bounding.height * 0.9 (fraction of elements height)
+  let offsetBottom = 150; // Offset in pixels or bounding.height * 0.9 (fraction of elements height)
+
+  let offsetFirst = offsetTop - bounding.height;
+  let offsetSecond = bounding.height - offsetBottom;
   return (
-    bounding.top >= offset &&
+    bounding.top >= offsetFirst &&
     bounding.bottom <=
-      (window.innerHeight - offset ||
-        document.documentElement.clientHeight - offset)
+      (window.innerHeight + offsetSecond ||
+        document.documentElement.clientHeight + offsetSecond)
   );
 }
-
-// Get the H1 heading
-var h1 = document.querySelector('h1');
-
-// Get it's position in the viewport
-var bounding = h1.getBoundingClientRect();
-
-// Log the results
-console.log(bounding);
