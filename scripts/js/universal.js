@@ -5,8 +5,6 @@ var scroll =
   function(callback) {
     window.setTimeout(callback, 1000 / 60);
   };
-
-//Choose which elements add class to
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
@@ -26,15 +24,32 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
+  // special bonus for those using jQuery
+  if (typeof jQuery === 'function' && el instanceof jQuery) {
+    el = el[0];
+  }
+
+  let offset = 50;
   var rect = el.getBoundingClientRect();
   return (
     (rect.top <= 0 && rect.bottom >= 0) ||
     (rect.bottom >=
       (window.innerHeight || document.documentElement.clientHeight) &&
       rect.top <=
-        (window.innerHeight || document.documentElement.clientHeight)) ||
+        (window.innerHeight - offset ||
+          document.documentElement.clientHeight - offset)) ||
     (rect.top >= 0 &&
       rect.bottom <=
-        (window.innerHeight || document.documentElement.clientHeight))
+        (window.innerHeight - offset ||
+          document.documentElement.clientHeight - offset))
   );
 }
+
+// Get the H1 heading
+var h1 = document.querySelector('h1');
+
+// Get it's position in the viewport
+var bounding = h1.getBoundingClientRect();
+
+// Log the results
+console.log(bounding);
