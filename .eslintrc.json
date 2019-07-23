@@ -5,8 +5,8 @@
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["airbnb", "prettier", "plugin:vue/essential"],
+  "plugins": ["prettier", "vue"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
