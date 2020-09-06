@@ -47,6 +47,10 @@ button {
   padding: 0;
 }
 
+.homepage-main-content {
+  margin: 300px 0;
+}
+
 .margin-div {
   width: 100%;
   height: 20vh;

@@ -17,9 +17,13 @@
 // ** Wrapper Classes  **
 // =========================================
 
+// The parent margin collapses with the first and last child
+
 .homepage-main-content {
   // @include flex(column);
   // @include main-grid;
+  margin: 300px 0;
+  // @include flex(column);
 }
 
 .margin-div {
