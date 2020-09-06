@@ -2,25 +2,36 @@
 // ** Colour, font stacks, media queries, that kind of thing.  **
 // =======================================================================================
 
-
 // =========================================
 // ** Media Queries  **
 // =========================================
 
-
 @mixin breakpoint($point) {
   @if $point == 2000 {
-    @media (max-width: 2000) { @content; }
+    @media (max-width: 2000) {
+      @content;
+    }
   }
 }
-
 
 // =========================================
 // ** Mixins  **
 // =========================================
 
+//********** Layout **********
 
-//********** General **********
+//********** Grid & Flexbox Mixins **********
+
+//Main Grid Mixin
+@mixin main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    'h h h h'
+    'm m m m'
+    'f f f f';
+  gap: $grid-gap;
+}
 
 //Display Flex Mixin
 @mixin flex($direction) {
@@ -28,12 +39,11 @@
   flex-direction: $direction;
 }
 
-
 //********** Typeography **********
 
 //Font Stacks
 @mixin heading-font-stack {
-font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 @mixin font-stack {
@@ -41,14 +51,11 @@ font-family: sans-serif;
   line-height: 2rem;
 }
 
-
 // =========================================
 // ** Variables  **
 // =========================================
 
-
 //********** Colours **********
-
 
 //Main Font Colours
 
@@ -63,27 +70,19 @@ $main-background-colour: #4756e4;
 $other-background-colour: #c32ff7;
 $white: #fff;
 
-
-
-
 //********** Transition Timings**********
 
-
-$transition-duration: 0.3s  ease-in-out 0s;
-$transition-duration-fast: 0.2s  ease-in-out 0s;
-$transition-duration-slow: 0.8s  ease-in-out 0s;
-
-
+$transition-duration: 0.3s ease-in-out 0s;
+$transition-duration-fast: 0.2s ease-in-out 0s;
+$transition-duration-slow: 0.8s ease-in-out 0s;
 
 //********** Spacing & layout  **********
-
 
 //Headings
 $large-h1-spacing: 5rem;
 $h1-spacing: 2.5rem;
 $h2-spacing: 1.5rem;
 $h3-spacing: 1rem;
-
 
 //Articles
 $large-article-spacing: 5rem;
@@ -103,10 +102,8 @@ $paragraph-spacing: 1.5rem;
 $input-spacing: 1%;
 
 //Other Spacing
-
-
+$grid-gap: 1rem;
 
 // =========================================
 // ** Browser Quirks  **
 // =========================================
-
