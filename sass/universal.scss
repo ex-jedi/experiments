@@ -27,11 +27,19 @@
 }
 
 .margin-div {
-  width: 100%;
+  width: 80%;
   height: 20vh;
   background-color: #00f;
-  margin: 200px 0;
-  top: 0;
+  margin: 200px auto;
+  transition: all 0.3s;
+
+  // &:nth-of-type(2n) {
+  //   background-color: #f00;
+  // }
+}
+
+.animate {
+  transform: skew(10deg) scale(1.1) rotate(10deg);
 }
 
 // =========================================

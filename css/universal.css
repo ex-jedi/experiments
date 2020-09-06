@@ -52,10 +52,18 @@ button {
 }
 
 .margin-div {
-  width: 100%;
+  width: 80%;
   height: 20vh;
   background-color: #00f;
-  margin: 200px 0;
-  top: 0;
+  margin: 200px auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.animate {
+  -webkit-transform: skew(10deg) scale(1.1) rotate(10deg);
+      -ms-transform: skew(10deg) scale(1.1) rotate(10deg);
+          transform: skew(10deg) scale(1.1) rotate(10deg);
 }
 /*# sourceMappingURL=universal.css.map */
