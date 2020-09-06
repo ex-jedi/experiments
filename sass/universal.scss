@@ -18,7 +18,8 @@
 // =========================================
 
 .homepage-main-content {
-  @include flex(column);
+  // @include flex(column);
+  // @include main-grid;
 }
 
 .margin-div {
@@ -26,8 +27,9 @@
   height: 20vh;
   background-color: #00f;
   margin: 200px 0;
-  // float: right;
+  top: 0;
 }
+
 // =========================================
 // ** Headings  **
 // =========================================

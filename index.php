@@ -26,7 +26,6 @@
 				<div class="margin-div"></div>
 				<div class="margin-div"></div>
 				<div class="margin-div div-to-remove"></div>
-				<div class="margin-div"></div>
 			</main>
 	</div> <!-- Wrapper div -->
 
