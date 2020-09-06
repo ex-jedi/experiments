@@ -1,9 +1,8 @@
 prepros.cfg
+images/Thumbs.db
 
 gulpfile\.js
 
 node_modules/
 
 package\.json
-
-*.db

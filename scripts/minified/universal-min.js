@@ -1,2 +1,2 @@
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ1bml2ZXJzYWwuanMiLCJzb3VyY2VzQ29udGVudCI6W119
+const removeIt=document.querySelectorAll("div div");async function beGone(e){const{currentTarget:n}=e;n.classList.add("animate"),n.addEventListener("transitionend",()=>{console.log(n),n.remove()})}removeIt.forEach(e=>e.addEventListener("click",beGone));
+//# sourceMappingURL=universal-min.js.map

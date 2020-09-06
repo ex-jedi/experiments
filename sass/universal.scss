@@ -2,69 +2,49 @@
 // ** Universal Styles for the whole site  **
 // =======================================================================================
 
-
 // =========================================
 // ** Imports  **
 // =========================================
 
-  @import "bits";
-  @import "baseline";
-
-
+@import 'bits';
+@import 'baseline';
 
 // =========================================
 // ** Wrapper Tags  **
 // =========================================
 
-html {
-  font-size: 20px;
-}
-
-body {
-  @include font-stack;
-}
-
-section {
-  width: 100%;
-}
-
-p {
-  padding: 0 $paragraph-spacing $paragraph-spacing;
-}
 // =========================================
 // ** Wrapper Classes  **
 // =========================================
 
-.image-section {
-  height: 100vh;
+// The parent margin collapses with the first and last child
 
+.homepage-main-content {
+  // @include flex(column);
+  // @include main-grid;
+  margin: 300px 0;
+  // @include flex(column);
 }
 
-.text-section {
-  background-color: $white;
+.margin-div {
+  width: 80%;
+  height: 20vh;
+  background-color: #00f;
+  margin: 200px auto;
+  transition: all 0.3s;
+
+  // &:nth-of-type(2n) {
+  //   background-color: #f00;
+  // }
 }
+
+.animate {
+  transform: skew(10deg) scale(1.1) rotate(10deg);
+}
+
 // =========================================
 // ** Headings  **
 // =========================================
-
-h1,
-h2,
-h3 {
-  width: 100%;
-  text-align: center;
-  padding: 0;
-}
-
-h1 {
-  margin: $large-h1-spacing auto;
-  margin-bottom: 5rem;
-}
-
-h2 {
-  margin: $h2-spacing auto;
-}
-
-
 
 // =========================================
 // ** Inline Tags  **
@@ -81,30 +61,6 @@ h2 {
 // =========================================
 // ** Body  **
 // =========================================
-
-//********** Image Backgrounds **********
-
-.image-section {
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.section-one {
-  background-image: url('/images/img-1.JPG');
-}
-
-.section-three {
-  background-image: url('/images/img-2.JPG');
-}
-
-.section-five {
-  background-image: url('/images/img-3.JPG');
-}
-
-.section-seven {
-  background-image: url('/images/img-4.JPG');
-}
 
 // =========================================
 // ** Footer  **
