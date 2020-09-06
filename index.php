@@ -11,11 +11,19 @@
 	<div class="page-wrapper">
 		<header>
 			<nav class="main-nav">
-
 			</nav>
 		</header>
 			<main class="homepage-main-content">
-
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
+				<div class="margin-div"></div>
 			</main>
 	</div> <!-- Wrapper div -->
 
