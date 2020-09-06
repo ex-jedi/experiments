@@ -48,13 +48,13 @@ button {
 }
 
 .homepage-main-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: auto 1rem auto 1rem auto;
-      grid-template-areas: "h h h h" "m m m m" "f f f f";
-  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .margin-div {

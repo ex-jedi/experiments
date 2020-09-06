@@ -18,7 +18,7 @@
 // =========================================
 
 .homepage-main-content {
-  @include main-grid;
+  @include flex(column);
 }
 
 .margin-div {
