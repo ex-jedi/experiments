@@ -8,8 +8,8 @@
 // ** Imports  **
 // =========================================
 
-@import "bits";
-@import "baseline";
+@import 'bits';
+@import 'baseline';
 
 // =========================================
 // ** Wrapper Tags  **
@@ -21,6 +21,7 @@ html {
 
 body {
   @include font-stack;
+  height: 5000px;
 }
 // =========================================
 // ** Wrapper Classes  **
@@ -72,7 +73,9 @@ img {
 
 .sticky {
   position: sticky;
-  top: 2rem;
+  top: 0;
+  background-color: #f00;
+  height: 200px;
 }
 
 // =========================================

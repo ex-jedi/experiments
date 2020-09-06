@@ -1,2 +1,91 @@
-html{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}*,:after,:before{-webkit-box-sizing:inherit;box-sizing:inherit}body{line-height:1}sup{position:relative;top:-.5em;vertical-align:baseline;font-size:75%;line-height:0}strong{font-weight:bold}button{text-align:inherit;text-transform:inherit;font:inherit;-webkit-font-smoothing:inherit;letter-spacing:inherit;background:none;cursor:pointer;overflow:visible}::-moz-focus-inner{border:0;padding:0}html{font-size:20px}body{font-family:sans-serif;line-height:2rem}h1,h2,h3{width:100%;text-align:center;padding:0}h1{margin-bottom:2.5rem}h2{margin:1.5rem auto}img{display:block}.content{position:relative}.sticky{position:-webkit-sticky;position:sticky;top:2rem}
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+button {
+  text-align: inherit;
+  text-transform: inherit;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  background: none;
+  cursor: pointer;
+  overflow: visible;
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 2rem;
+  height: 5000px;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  margin: 1.5rem auto;
+}
+
+img {
+  display: block;
+}
+
+.content {
+  position: relative;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #f00;
+  height: 200px;
+}
 /*# sourceMappingURL=universal.css.map */
