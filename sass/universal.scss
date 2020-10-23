@@ -26,20 +26,29 @@
   // @include flex(column);
 }
 
-.margin-div {
-  width: 80%;
-  height: 20vh;
-  background-color: #00f;
-  margin: 200px auto;
-  transition: all 0.3s;
+.svg-wrapper {
+  width: auto;
+  margin: 0 auto;
 
-  // &:nth-of-type(2n) {
-  //   background-color: #f00;
-  // }
+  svg {
+
+    max-height: 100vh;
+  }
 }
 
-.animate {
-  transform: skew(10deg) scale(1.1) rotate(10deg);
+@keyframes turn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+[data-name="Text"] {
+  opacity: 1;
+  transform-origin: center;
+  animation: turn 10s linear infinite forwards;
 }
 
 // =========================================
