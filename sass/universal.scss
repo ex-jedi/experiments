@@ -6,8 +6,8 @@
 // ** Imports  **
 // =========================================
 
-@import 'bits';
-@import 'baseline';
+@import "bits";
+@import "baseline";
 
 // =========================================
 // ** Wrapper Tags  **
@@ -22,17 +22,17 @@
 .homepage-main-content {
   // @include flex(column);
   // @include main-grid;
-  margin: 300px 0;
+  // margin: 300px 0;
   // @include flex(column);
 }
 
 .svg-wrapper {
   width: auto;
   margin: 0 auto;
+  padding: 50px;
 
   svg {
-
-    max-height: 100vh;
+    max-height: 90vh;
   }
 }
 
