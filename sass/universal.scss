@@ -2,15 +2,12 @@
 // ** Universal Styles for the whole site  **
 // =======================================================================================
 
-
 // =========================================
 // ** Imports  **
 // =========================================
 
-  @import "bits";
-  @import "baseline";
-
-
+@import "bits";
+@import "baseline";
 
 // =========================================
 // ** Wrapper Tags  **
@@ -48,7 +45,8 @@ p {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   width: 75%;
   text-align: left;
   padding: 10px;
@@ -62,8 +60,6 @@ h1 {
 h2 {
   margin: $h2-spacing;
 }
-
-
 
 // =========================================
 // ** Inline Tags  **
@@ -90,19 +86,19 @@ h2 {
 }
 
 .section-one {
-  background-image: url('/images/img-1.JPG');
+  background-image: url("/images/img-1.JPG");
 }
 
 .section-three {
-  background-image: url('/images/img-2.JPG');
+  background-image: url("/images/img-2.JPG");
 }
 
 .section-five {
-  background-image: url('/images/img-3.JPG');
+  background-image: url("/images/img-3.JPG");
 }
 
 .section-seven {
-  background-image: url('/images/img-4.JPG');
+  background-image: url("/images/img-4.JPG");
 }
 
 // =========================================
