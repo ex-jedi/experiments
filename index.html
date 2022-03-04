@@ -1,71 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.scss" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Hello World</h1>
+    </header>
+    <div class="test">Hello</div>
 
-<head>
-
-	<title>Vue</title>
-
-	<style>
-
-		.button {
-			font-size: 1.5rem;
-			border: 2px solid #504d4d;
-			border-radius: 5px;
-		}
-
-		.is-loading {
-			background-color: red;
-		}
-
-	</style>
-</head>
-
-<body>
-
-	<div id="root">
-
-		<ul>
-			<li v-for="name in names" v-text="name"></li>
-		</ul>
-
-			<input type="text" v-model="newName">
-			<button v-on:click="addName">Add Name</button>
-
-
-	</div>
-
-
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-			<script>
-
-				new Vue({
-
-					el: '#root',
-
-					data: {
-
-						newName: '',
-
-						names: ['Jon', 'Sam', 'Finn', 'Ben']
-
-					},
-
-					methods : {
-
-						addName: function () {
-
-							this.names.push(this.newName);
-							this.newName = '';
-
-						}
-
-					}
-
-				});
-
-			</script>
-
-</body>
-
+    <script src="/scripts/minified/main-min.js" type="module"></script>
+  </body>
 </html>
