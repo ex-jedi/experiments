@@ -1,0 +1,56 @@
+@keyframes marquee-text-animation {
+  0% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000;
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1640px;
+  background-color: #fff;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  position: relative;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  text-align: left;
+  text-transform: uppercase;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+section {
+  z-index: 3;
+  width: 100%;
+  min-height: 80vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=index.8d8029cf.css.map */

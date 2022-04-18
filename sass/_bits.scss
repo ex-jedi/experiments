@@ -1,109 +1,79 @@
-// =======================================================================================
-// ** Colour, font stacks, media queries, that kind of thing.  **
-// =======================================================================================
+//*==============================================================================
+//** Colour, font stacks, media queries, that kind of thing  **
+//*==============================================================================
 
-// =========================================
-// ** Media Queries  **
-// =========================================
+//*=========================================
+//** Media Queries   **
+//*=========================================
+
+//********** Max Width **********
 
 @mixin breakpoint($point) {
-  @if $point == 2000 {
-    @media (max-width: 2000) {
-      @content;
-    }
+  @if unitless($point) {
+    $point: 1px * $point;
+  }
+  @media (max-width: $point) {
+    @content;
   }
 }
 
-// =========================================
-// ** Mixins  **
-// =========================================
+//*=========================================
+//** Layout **
+//*=========================================
 
-//********** Layout **********
-
-//********** Grid & Flexbox Mixins **********
-
-//Main Grid Mixin
-@mixin main-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    'h h h h'
-    'm m m m'
-    'f f f f';
-  gap: $grid-gap;
-}
-
-//Display Flex Mixin
+//* Flex Mixin
 @mixin flex($direction) {
   display: flex;
   flex-direction: $direction;
 }
 
-//********** Typeography **********
+//*=========================================
+//** Typography **
+//*=========================================
 
-//Font Stacks
-@mixin heading-font-stack {
-  font-family: sans-serif;
+//* Font Stacks
+@mixin main-font-stack {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
-@mixin font-stack {
-  font-family: sans-serif;
-  line-height: 2rem;
+//********** Font Sizing **********
+
+$font-size-tiny: 0.95rem;
+$font-size-small: 1.1rem;
+$font-size-medium: 1.3rem;
+$font-size-large: 1.8rem;
+$font-size-extra-large: 2.1rem;
+$font-size-very-large: 5rem;
+$font-size-super-size: 9rem;
+$font-size-super-duper-size: 14rem;
+
+//*=========================================
+//** Colours  **
+//*=========================================
+
+// Main brand Colours
+$background-colour-light: #fff;
+$background-colour-dark: #000;
+
+// Main Font Colours
+$font-colour-light: #fff;
+$font-colour-dark: #000000;
+
+// Link Colours
+$link-colour: #3c3cf6;
+
+//*=========================================
+//** Animations **
+//*=========================================
+
+//********** Marquee **********
+
+@keyframes marquee-text-animation {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
-
-// =========================================
-// ** Variables  **
-// =========================================
-
-//********** Colours **********
-
-//Main Font Colours
-
-$font-colour: #424141;
-$light-font-colour: #f2f0eb;
-
-//Link Colours
-$link-colour: #486a8d;
-
-//Background Colours
-$main-background-colour: #4756e4;
-$other-background-colour: #c32ff7;
-$white: #fff;
-
-//********** Transition Timings**********
-
-$transition-duration: 0.3s ease-in-out 0s;
-$transition-duration-fast: 0.2s ease-in-out 0s;
-$transition-duration-slow: 0.8s ease-in-out 0s;
-
-//********** Spacing & layout  **********
-
-//Headings
-$large-h1-spacing: 5rem;
-$h1-spacing: 2.5rem;
-$h2-spacing: 1.5rem;
-$h3-spacing: 1rem;
-
-//Articles
-$large-article-spacing: 5rem;
-$article-spacing: 2.5rem;
-$small-article-spacing: 1rem;
-
-//Sections
-$large-section-spacing: 3rem;
-$section-spacing: 1.5rem;
-$small-section-spacing: 1rem;
-
-//Paragraphs
-$large-paragraph-spacing: 3rem;
-$paragraph-spacing: 1.5rem;
-
-//Forms
-$input-spacing: 1%;
-
-//Other Spacing
-$grid-gap: 1rem;
-
-// =========================================
-// ** Browser Quirks  **
-// =========================================

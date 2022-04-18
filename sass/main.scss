@@ -1,0 +1,86 @@
+// *=======================================================================================
+// ** Styles for all pages  **
+// *=======================================================================================
+
+// *=======================================================================================
+// ** Imports & Mixins  **
+// *=======================================================================================
+
+//*=========================================
+//** Imports **
+//*=========================================
+
+@use 'bits'as *; //Contains variables, media queries mixins etc.
+
+//*=========================================
+//** Mixins **
+//*=========================================
+
+// Bottom spacing
+
+
+// *=========================================
+// ** Page & Site Wrappers **
+// *=========================================
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: $background-colour-dark;
+}
+
+// * Box sizing rules
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  @include main-font-stack;
+  margin: 0 auto;
+  position: relative;
+  min-width: 320px;
+  max-width: 1640px;
+  overflow-x: hidden;
+  background-color: $background-colour-light;
+}
+
+// *=========================================
+// ** Content container and block **
+// *=========================================
+
+//********** Headings**********
+h1,
+h2,
+h3 {
+  @include main-font-stack;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+//********** Containers **********
+
+section {
+  top: 0;
+  left: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  width: 100%;
+  min-height: 80vh;
+}
+
+// *=========================================
+// ** Inline **
+// *=========================================
+
+//********** Images **********
+
+//* Make images easier to work with
+img {
+  max-width: 100%;
+  display: block;
+}
