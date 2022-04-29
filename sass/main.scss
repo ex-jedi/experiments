@@ -27,7 +27,7 @@ html {
   font-size: 10px;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  background-color: $background-colour-dark;
+  background-color: $background-colour-light;
 }
 
 // * Box sizing rules
@@ -82,5 +82,15 @@ section {
 //* Make images easier to work with
 img {
   max-width: 100%;
+  width: 300px;
   display: block;
+}
+
+.float-left {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+p {
+  font-size: 2rem;
 }

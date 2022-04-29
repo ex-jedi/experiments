@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #000;
+  background-color: #fff;
   font-size: 10px;
   overflow-x: hidden;
 }
@@ -50,7 +50,17 @@ section {
 
 img {
   max-width: 100%;
+  width: 300px;
   display: block;
+}
+
+.float-left {
+  float: left;
+  margin: 0 20px 10px 0;
+}
+
+p {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=index.8d8029cf.css.map */
